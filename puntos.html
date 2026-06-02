@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asegurá La Casa | Sistema de Puntos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: "#fff7ed",
+                100: "#fed7aa",
+                500: "#ff7a00",
+                600: "#e86100",
+                900: "#7c2d12",
+                950: "#1f130a",
+              },
+            },
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+            },
+            boxShadow: {
+              glow: "0 18px 50px rgba(255, 122, 0, 0.28)",
+              soft: "0 24px 80px rgba(124, 45, 18, 0.16)",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-brand-50 font-sans text-brand-950 antialiased">
+    <header class="border-b border-brand-100 bg-white">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <a href="index.html" class="font-black">Asegurá La Casa</a>
+        <div class="flex gap-3">
+          <a href="index.html" class="rounded-lg border border-brand-100 px-5 py-3 text-sm font-black text-brand-950 transition hover:-translate-y-1 hover:bg-brand-50">Volver a ALC</a>
+          <a href="index.html#cotizar" class="rounded-lg bg-brand-500 px-5 py-3 text-sm font-black text-white shadow-glow transition hover:-translate-y-1 hover:bg-brand-600">Cotizar hogar</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="bg-white py-16 sm:py-24">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_0.9fr] lg:items-center lg:px-8">
+          <div>
+            <p class="text-sm font-black uppercase tracking-[0.18em] text-brand-600">Sistema de puntos</p>
+            <h1 class="mt-4 text-4xl font-black leading-tight tracking-tight sm:text-6xl">Asegurá tu hogar y sumá beneficios reales</h1>
+            <p class="mt-5 text-lg leading-8 text-brand-900/75">Es un programa de fidelización: cada vez que contratás, renovás o sumás productos con ALC, acumulás puntos para canjear por descuentos, servicios y beneficios para tu casa.</p>
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a href="index.html#cotizar" class="rounded-lg bg-brand-500 px-6 py-4 text-center font-black text-white shadow-glow transition hover:-translate-y-1 hover:bg-brand-600">Quiero cotizar y sumar</a>
+              <a href="index.html" class="rounded-lg border border-brand-100 bg-white px-6 py-4 text-center font-black text-brand-950 transition hover:-translate-y-1 hover:bg-brand-50">Volver al hogar</a>
+            </div>
+          </div>
+          <div class="rounded-lg bg-brand-950 p-6 text-white shadow-soft">
+            <div class="rounded-lg bg-white p-6 text-brand-950">
+              <p class="text-sm font-black uppercase tracking-[0.16em] text-brand-600">Ejemplo de beneficios</p>
+              <div class="mt-5 grid gap-3">
+                <div class="rounded-lg bg-brand-50 p-4 font-bold">Descuentos en ferreterías y pinturerías</div>
+                <div class="rounded-lg bg-brand-50 p-4 font-bold">Limpieza de aire acondicionado o service básico</div>
+                <div class="rounded-lg bg-brand-50 p-4 font-bold">Gift cards para supermercado o combustible</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-16">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl">
+            <p class="text-sm font-black uppercase tracking-[0.18em] text-brand-600">Cómo funciona</p>
+            <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-5xl">Sumás, elegís y canjeás</h2>
+          </div>
+          <div class="mt-10 grid gap-5 md:grid-cols-3">
+            <article class="rounded-lg bg-white p-6 shadow-soft">
+              <div class="grid h-11 w-11 place-items-center rounded-lg bg-brand-500 font-black text-white">1</div>
+              <h3 class="mt-5 text-xl font-black">Contratás o renovás</h3>
+              <p class="mt-3 leading-7 text-brand-900/75">Cada operación suma puntos: hogar, caución, tecnología o productos adicionales.</p>
+            </article>
+            <article class="rounded-lg bg-white p-6 shadow-soft">
+              <div class="grid h-11 w-11 place-items-center rounded-lg bg-brand-500 font-black text-white">2</div>
+              <h3 class="mt-5 text-xl font-black">Acumulás puntos</h3>
+              <p class="mt-3 leading-7 text-brand-900/75">Los puntos se guardan en tu perfil y pueden crecer por renovaciones, referidos o campañas especiales.</p>
+            </article>
+            <article class="rounded-lg bg-white p-6 shadow-soft">
+              <div class="grid h-11 w-11 place-items-center rounded-lg bg-brand-500 font-black text-white">3</div>
+              <h3 class="mt-5 text-xl font-black">Canjeás beneficios</h3>
+              <p class="mt-3 leading-7 text-brand-900/75">Elegís entre descuentos, servicios para el hogar, gift cards o beneficios de comercios aliados.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white py-16">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <p class="text-sm font-black uppercase tracking-[0.18em] text-brand-600">Canjes posibles</p>
+          <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="rounded-lg border border-brand-100 bg-brand-50 p-5 font-bold">Kit de mantenimiento del hogar</div>
+            <div class="rounded-lg border border-brand-100 bg-brand-50 p-5 font-bold">Descuento en cerrajería programada</div>
+            <div class="rounded-lg border border-brand-100 bg-brand-50 p-5 font-bold">Limpieza de PC o notebook</div>
+            <div class="rounded-lg border border-brand-100 bg-brand-50 p-5 font-bold">Bonificación en renovación</div>
+            <div class="rounded-lg border border-brand-100 bg-brand-50 p-5 font-bold">Voucher para cafetería o restaurante</div>
+            <div class="rounded-lg border border-brand-100 bg-brand-50 p-5 font-bold">Descuentos en tecnología</div>
+            <div class="rounded-lg border border-brand-100 bg-brand-50 p-5 font-bold">Gift card de supermercado</div>
+            <div class="rounded-lg border border-brand-100 bg-brand-50 p-5 font-bold">Beneficios para referidos</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <a href="https://wa.me/5491151397443?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20el%20sistema%20de%20puntos" class="fixed bottom-5 right-5 rounded-full bg-[#25D366] px-5 py-4 font-black text-white shadow-glow transition hover:-translate-y-1">WhatsApp</a>
+  </body>
+</html>
