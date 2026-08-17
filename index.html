@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Landing page de Asegurá La Casa: broker de seguros de hogar, planes comparados, compañías aliadas y cotización rápida."
+      content="Asegurá La Casa: seguros de hogar con asistencia las 24hs, incendio, responsabilidad civil, robo, daños por agua y electrodomésticos. Cotizá con un broker que compara compañías."
     />
-    <title>Asegurá La Casa | Tu hogar, protegido y asistido</title>
+    <title>Asegurá La Casa | Cotizá tu seguro de hogar</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -67,14 +67,6 @@
         background: rgba(255, 255, 255, 0.84);
       }
 
-      .review-slide {
-        display: none;
-      }
-
-      .review-slide.is-active {
-        display: block;
-      }
-
       .marquee-track {
         animation: marquee 24s linear infinite;
       }
@@ -93,25 +85,33 @@
   <body class="font-sans text-trust-950 antialiased">
     <header class="fixed inset-x-0 top-0 z-40 border-b border-trust-100 bg-white/95 backdrop-blur">
       <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-        <a href="#inicio" class="flex items-center gap-3" aria-label="Asegurá La Casa">
-          <span class="grid h-10 w-10 place-items-center rounded-lg bg-action-500 text-lg font-black text-white">ALC</span>
-          <span class="text-base font-extrabold tracking-tight text-trust-950 sm:text-lg">Asegurá La Casa</span>
+        <a href="#inicio" class="flex items-center" aria-label="Asegurá La Casa">
+          <img src="assets/logo.png" alt="Asegurá" class="h-9 w-auto sm:h-10" width="680" height="141" />
         </a>
         <div class="hidden items-center gap-6 text-sm font-semibold text-trust-900/75 md:flex">
-          <a class="transition hover:text-action-600" href="#beneficios">Beneficios</a>
           <a class="transition hover:text-action-600" href="#planes">Planes</a>
-          <a class="transition hover:text-action-600" href="caucion.html">Caución</a>
-          <a class="transition hover:text-action-600" href="tecnologia.html">Tecnología</a>
+          <a class="transition hover:text-action-600" href="#beneficios">Coberturas</a>
+          <a class="transition hover:text-action-600" href="caucion.html">Caución alquiler</a>
           <a class="transition hover:text-action-600" href="puntos.html">Puntos</a>
-          <a class="transition hover:text-action-600" href="#faqs">FAQs</a>
-          <a class="transition hover:text-action-600" href="#reviews">Reviews</a>
+          <a class="transition hover:text-action-600" href="#faqs">Preguntas frecuentes</a>
+          <a class="transition hover:text-action-600" href="#opiniones">Opiniones</a>
         </div>
-        <a
-          href="#cotizar"
-          class="rounded-lg bg-action-500 px-4 py-2.5 text-sm font-extrabold text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-action-600 focus:outline-none focus:ring-4 focus:ring-action-400/40"
-        >
-          Cotizar
-        </a>
+        <div class="flex items-center gap-2 sm:gap-3">
+          <a
+            href="https://club-amk-app.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rounded-lg border border-trust-100 px-3 py-2.5 text-sm font-extrabold text-trust-950 transition hover:-translate-y-0.5 hover:border-action-500 hover:text-action-600 focus:outline-none focus:ring-4 focus:ring-action-400/40 sm:px-4"
+          >
+            Acceso portal
+          </a>
+          <a
+            href="#cotizar"
+            class="rounded-lg bg-action-500 px-3 py-2.5 text-sm font-extrabold text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-action-600 focus:outline-none focus:ring-4 focus:ring-action-400/40 sm:px-4"
+          >
+            Cotizar
+          </a>
+        </div>
       </nav>
     </header>
 
@@ -124,83 +124,46 @@
               Broker de seguros de hogar
             </p>
             <h1 class="text-balance text-4xl font-black leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
-              Tu hogar, protegido y asistido
+              Asegurá lo que realmente importa
             </h1>
             <p class="mx-auto mt-6 max-w-2xl text-pretty text-lg font-medium leading-8 text-white/88 sm:text-2xl">
-              Comparamos compañías líderes y te acercamos la mejor cotización para tu casa.
+              Incendio, robo, responsabilidad civil, daños por agua y asistencia las 24hs. Comparamos compañías y te acercamos la cotización que mejor te sirve.
             </p>
             <div class="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <a
                 href="#cotizar"
                 class="w-full rounded-lg bg-action-500 px-7 py-4 text-center text-base font-black text-white shadow-glow transition hover:-translate-y-1 hover:scale-[1.02] hover:bg-action-600 focus:outline-none focus:ring-4 focus:ring-action-400/40 sm:w-auto"
               >
-                Cotizar en 30 segundos
-              </a>
-              <a
-                href="tecnologia.html"
-                class="w-full rounded-lg border border-white/35 bg-white/10 px-7 py-4 text-center text-base font-extrabold text-white backdrop-blur transition hover:-translate-y-1 hover:bg-white/18 sm:w-auto"
-              >
-                Proteger mi tecnología
-              </a>
-              <a
-                href="puntos.html"
-                class="w-full rounded-lg border border-white/35 bg-white px-7 py-4 text-center text-base font-extrabold text-trust-950 transition hover:-translate-y-1 hover:bg-trust-50 sm:w-auto"
-              >
-                Sistema de puntos
+                Cotizar mi hogar
               </a>
               <a
                 href="caucion.html"
                 class="w-full rounded-lg border border-white/35 bg-white/10 px-7 py-4 text-center text-base font-extrabold text-white backdrop-blur transition hover:-translate-y-1 hover:bg-white/18 sm:w-auto"
               >
-                Seguro de caución
+                Caución para alquiler
+              </a>
+              <a
+                href="puntos.html"
+                class="w-full rounded-lg border border-white/35 bg-white px-7 py-4 text-center text-base font-extrabold text-trust-950 transition hover:-translate-y-1 hover:bg-trust-50 sm:w-auto"
+              >
+                Sumá puntos
               </a>
             </div>
           </div>
 
           <div class="glass mx-auto grid w-full max-w-4xl grid-cols-1 gap-4 rounded-lg p-4 shadow-trust sm:grid-cols-3">
             <div class="rounded-md bg-white p-4">
-              <p class="text-2xl font-black text-trust-900">24/7</p>
-              <p class="mt-1 text-sm font-semibold text-trust-700">Asistencia ante urgencias</p>
+              <p class="text-2xl font-black text-trust-900">24hs</p>
+              <p class="mt-1 text-sm font-semibold text-trust-700">Plomería, gasista, cerrajería y urgencias</p>
             </div>
             <div class="rounded-md bg-white p-4">
-              <p class="text-2xl font-black text-trust-900">30s</p>
-              <p class="mt-1 text-sm font-semibold text-trust-700">Comparación entre aseguradoras</p>
+              <p class="text-2xl font-black text-trust-900">$5.500</p>
+              <p class="mt-1 text-sm font-semibold text-trust-700">Precio del plan más accesible, por mes</p>
             </div>
             <div class="rounded-md bg-white p-4">
-              <p class="text-2xl font-black text-trust-900">+Puntos</p>
-              <p class="mt-1 text-sm font-semibold text-trust-700">Planes desde $5.500</p>
+              <p class="text-2xl font-black text-trust-900">4,9 ★</p>
+              <p class="mt-1 text-sm font-semibold text-trust-700">435 opiniones en Google</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="beneficios" class="bg-white py-16 sm:py-20">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div class="max-w-3xl">
-            <p class="text-sm font-black uppercase tracking-[0.18em] text-action-600">Broker especializado</p>
-            <h2 class="mt-3 text-3xl font-black tracking-tight text-trust-950 sm:text-5xl">Te ayudamos a elegir cobertura, precio y compañía sin perder tiempo</h2>
-          </div>
-          <div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-            <article class="rounded-lg border border-trust-100 bg-trust-50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-trust">
-              <div class="grid h-12 w-12 place-items-center rounded-lg bg-trust-900 text-xl text-white">01</div>
-              <h3 class="mt-6 text-xl font-black">Búsqueda de mejor cotización</h3>
-              <p class="mt-3 leading-7 text-trust-700">Analizamos tus datos y comparamos alternativas para encontrar una propuesta conveniente para tu vivienda.</p>
-            </article>
-            <article class="rounded-lg border border-trust-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-trust">
-              <div class="grid h-12 w-12 place-items-center rounded-lg bg-trust-900 text-xl text-white">02</div>
-              <h3 class="mt-6 text-xl font-black">Varias compañías en un solo lugar</h3>
-              <p class="mt-3 leading-7 text-trust-700">Trabajamos con aseguradoras como Meridional, Mapfre y otras compañías para ampliar tus opciones.</p>
-            </article>
-            <article class="rounded-lg border border-trust-100 bg-trust-50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-trust">
-              <div class="grid h-12 w-12 place-items-center rounded-lg bg-action-500 text-xl font-black text-white">03</div>
-              <h3 class="mt-6 text-xl font-black">Asistencia del hogar 24/7</h3>
-              <p class="mt-3 leading-7 text-trust-700">Servicios de plomería, gasista, cerrajero y urgencias del hogar para resolver rápido cuando más lo necesitás.</p>
-            </article>
-            <article class="rounded-lg border border-trust-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-trust">
-              <div class="grid h-12 w-12 place-items-center rounded-lg bg-trust-900 text-xl text-white">04</div>
-              <h3 class="mt-6 text-xl font-black">Asesoramiento y respuesta inmediata</h3>
-              <p class="mt-3 leading-7 text-trust-700">Te guiamos antes de contratar y seguimos disponibles para consultas, asistencia y próximos pasos.</p>
-            </article>
           </div>
         </div>
       </section>
@@ -209,56 +172,153 @@
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="max-w-3xl">
             <p class="text-sm font-black uppercase tracking-[0.18em] text-action-600">Planes disponibles</p>
-            <h2 class="mt-3 text-3xl font-black tracking-tight text-trust-950 sm:text-5xl">Tres puntos de partida para cotizar mejor</h2>
-            <p class="mt-5 text-lg leading-8 text-trust-700">Los valores son referencias iniciales. Como broker, buscamos la alternativa que mejor combine precio, cobertura y compañía para tu perfil.</p>
+            <h2 class="mt-3 text-3xl font-black tracking-tight text-trust-950 sm:text-5xl">Elegí desde dónde arrancar</h2>
+            <p class="mt-5 text-lg leading-8 text-trust-700">Estas son las sumas aseguradas de cada plan. Como broker comparamos compañías, así que podemos ajustar coberturas y montos a tu vivienda antes de emitir.</p>
           </div>
 
           <div class="mt-10 grid gap-5 lg:grid-cols-3">
             <article class="rounded-lg border border-trust-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-trust">
-              <p class="text-sm font-black uppercase tracking-[0.16em] text-trust-700">Plan Básico</p>
+              <p class="text-sm font-black uppercase tracking-[0.16em] text-trust-700">Plan Total Básico</p>
               <div class="mt-4 flex items-end gap-1">
                 <span class="text-4xl font-black text-trust-950">$5.500</span>
                 <span class="pb-1 text-sm font-bold text-trust-700">/mes</span>
               </div>
-              <p class="mt-4 leading-7 text-trust-700">Para quienes necesitan una cobertura inicial y asistencia esencial para el hogar.</p>
-              <a href="#cotizar" class="mt-6 inline-flex w-full justify-center rounded-lg bg-trust-900 px-5 py-3 font-black text-white transition hover:-translate-y-1 hover:bg-trust-700">Cotizar Básico</a>
+              <dl class="mt-5 divide-y divide-trust-100 border-y border-trust-100 text-sm">
+                <div class="flex items-baseline justify-between gap-3 py-2.5">
+                  <dt class="text-trust-700">Incendio de tu casa y su contenido</dt>
+                  <dd class="shrink-0 font-black text-trust-950">$20.000.000</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-3 py-2.5">
+                  <dt class="text-trust-700">Responsabilidad Civil</dt>
+                  <dd class="shrink-0 font-black text-trust-950">$1.500.000</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-3 py-2.5">
+                  <dt class="text-trust-700">Robo de objetos generales</dt>
+                  <dd class="shrink-0 font-black text-trust-950">$300.000</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-3 py-2.5">
+                  <dt class="text-trust-700">Todo Riesgo Electrodomésticos y Tecnología</dt>
+                  <dd class="shrink-0 font-black text-trust-950">$400.000</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-3 py-2.5">
+                  <dt class="text-trust-700">Rotura de cristales</dt>
+                  <dd class="shrink-0 font-black text-trust-950">$150.000</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-3 py-2.5">
+                  <dt class="text-trust-700">Daños por agua</dt>
+                  <dd class="shrink-0 font-black text-trust-950">$150.000</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-3 py-2.5">
+                  <dt class="text-trust-700">Alimentos refrigerados</dt>
+                  <dd class="shrink-0 font-black text-trust-950">$50.000</dd>
+                </div>
+              </dl>
+              <a href="#cotizar" class="mt-6 inline-flex w-full justify-center rounded-lg bg-trust-900 px-5 py-3 font-black text-white transition hover:-translate-y-1 hover:bg-trust-700">Me interesa</a>
             </article>
 
             <article class="relative rounded-lg border-2 border-action-500 bg-trust-950 p-6 text-white shadow-glow transition hover:-translate-y-1">
-              <span class="absolute right-5 top-5 rounded-full bg-action-500 px-3 py-1 text-xs font-black uppercase tracking-[0.12em]">Popular</span>
-              <p class="text-sm font-black uppercase tracking-[0.16em] text-action-400">Plan Intermedio</p>
+              <span class="absolute right-5 top-5 rounded-full bg-action-500 px-3 py-1 text-xs font-black uppercase tracking-[0.12em]">El más elegido</span>
+              <p class="text-sm font-black uppercase tracking-[0.16em] text-action-400">Plan Total Intermedio</p>
               <div class="mt-4 flex items-end gap-1">
                 <span class="text-4xl font-black">$6.500</span>
                 <span class="pb-1 text-sm font-bold text-white/70">/mes</span>
               </div>
-              <p class="mt-4 leading-7 text-white/76">Mayor equilibrio entre precio y protección para vivienda, objetos generales y tecnología.</p>
-              <a href="#cotizar" class="mt-6 inline-flex w-full justify-center rounded-lg bg-action-500 px-5 py-3 font-black text-white shadow-glow transition hover:-translate-y-1 hover:bg-action-600">Cotizar Intermedio</a>
+              <dl class="mt-5 divide-y divide-white/15 border-y border-white/15 text-sm">
+                <div class="flex items-baseline justify-between gap-3 py-2.5">
+                  <dt class="text-white/76">Incendio de tu casa y su contenido</dt>
+                  <dd class="shrink-0 font-black">$22.000.000</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-3 py-2.5">
+                  <dt class="text-white/76">Responsabilidad Civil</dt>
+                  <dd class="shrink-0 font-black">$1.600.000</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-3 py-2.5">
+                  <dt class="text-white/76">Robo de objetos generales</dt>
+                  <dd class="shrink-0 font-black">$450.000</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-3 py-2.5">
+                  <dt class="text-white/76">Todo Riesgo Electrodomésticos y Tecnología</dt>
+                  <dd class="shrink-0 font-black">$450.000</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-3 py-2.5">
+                  <dt class="text-white/76">Rotura de cristales</dt>
+                  <dd class="shrink-0 font-black">$180.000</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-3 py-2.5">
+                  <dt class="text-white/76">Daños por agua</dt>
+                  <dd class="shrink-0 font-black">$180.000</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-3 py-2.5">
+                  <dt class="text-white/76">Alimentos refrigerados</dt>
+                  <dd class="shrink-0 font-black">$55.000</dd>
+                </div>
+              </dl>
+              <a href="#cotizar" class="mt-6 inline-flex w-full justify-center rounded-lg bg-action-500 px-5 py-3 font-black text-white shadow-glow transition hover:-translate-y-1 hover:bg-action-600">Me interesa</a>
             </article>
 
             <article class="rounded-lg border border-trust-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-trust">
-              <p class="text-sm font-black uppercase tracking-[0.16em] text-trust-700">Plan Full</p>
+              <p class="text-sm font-black uppercase tracking-[0.16em] text-trust-700">Plan Total Full</p>
               <div class="mt-4 flex items-end gap-1">
                 <span class="text-4xl font-black text-trust-950">$12.500</span>
                 <span class="pb-1 text-sm font-bold text-trust-700">/mes</span>
               </div>
-              <p class="mt-4 leading-7 text-trust-700">Para quienes buscan una cobertura más robusta y mayor tranquilidad ante imprevistos.</p>
-              <a href="#cotizar" class="mt-6 inline-flex w-full justify-center rounded-lg bg-trust-900 px-5 py-3 font-black text-white transition hover:-translate-y-1 hover:bg-trust-700">Cotizar Full</a>
+              <dl class="mt-5 divide-y divide-trust-100 border-y border-trust-100 text-sm">
+                <div class="flex items-baseline justify-between gap-3 py-2.5">
+                  <dt class="text-trust-700">Incendio de tu casa y su contenido</dt>
+                  <dd class="shrink-0 font-black text-trust-950">$30.000.000</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-3 py-2.5">
+                  <dt class="text-trust-700">Responsabilidad Civil</dt>
+                  <dd class="shrink-0 font-black text-trust-950">$3.500.000</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-3 py-2.5">
+                  <dt class="text-trust-700">Robo de objetos generales</dt>
+                  <dd class="shrink-0 font-black text-trust-950">$800.000</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-3 py-2.5">
+                  <dt class="text-trust-700">Todo Riesgo Electrodomésticos y Tecnología</dt>
+                  <dd class="shrink-0 font-black text-trust-950">$1.000.000</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-3 py-2.5">
+                  <dt class="text-trust-700">Rotura de cristales</dt>
+                  <dd class="shrink-0 font-black text-trust-950">$450.000</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-3 py-2.5">
+                  <dt class="text-trust-700">Daños por agua</dt>
+                  <dd class="shrink-0 font-black text-trust-950">$450.000</dd>
+                </div>
+                <div class="flex items-baseline justify-between gap-3 py-2.5">
+                  <dt class="text-trust-700">Alimentos refrigerados</dt>
+                  <dd class="shrink-0 font-black text-trust-950">$100.000</dd>
+                </div>
+              </dl>
+              <a href="#cotizar" class="mt-6 inline-flex w-full justify-center rounded-lg bg-trust-900 px-5 py-3 font-black text-white transition hover:-translate-y-1 hover:bg-trust-700">Me interesa</a>
             </article>
           </div>
 
-          <div class="mt-10 overflow-hidden rounded-lg border border-trust-100 bg-trust-50 py-5">
-            <p class="px-5 text-sm font-black uppercase tracking-[0.18em] text-trust-700">Compañías aliadas</p>
+          <p class="mt-6 text-sm font-semibold text-trust-700">Los precios pueden variar por zona de riesgo.</p>
+        </div>
+      </section>
+
+      <section id="companias" class="bg-white pb-16 sm:pb-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="overflow-hidden rounded-lg border border-trust-100 bg-trust-50 py-5">
+            <p class="px-5 text-sm font-black uppercase tracking-[0.18em] text-trust-700">Compañías con las que trabajamos</p>
             <div class="mt-4 flex w-max marquee-track gap-3 px-5">
-              <div class="rounded-md bg-white px-8 py-4 text-center text-sm font-black text-trust-900 shadow-sm">Meridional</div>
+              <div class="rounded-md bg-white px-8 py-4 text-center text-sm font-black text-trust-900 shadow-sm">Allianz</div>
               <div class="rounded-md bg-white px-8 py-4 text-center text-sm font-black text-trust-900 shadow-sm">Mapfre</div>
+              <div class="rounded-md bg-white px-8 py-4 text-center text-sm font-black text-trust-900 shadow-sm">RSA</div>
               <div class="rounded-md bg-white px-8 py-4 text-center text-sm font-black text-trust-900 shadow-sm">Sancor</div>
               <div class="rounded-md bg-white px-8 py-4 text-center text-sm font-black text-trust-900 shadow-sm">Zurich</div>
+              <div class="rounded-md bg-white px-8 py-4 text-center text-sm font-black text-trust-900 shadow-sm">Meridional</div>
               <div class="rounded-md bg-white px-8 py-4 text-center text-sm font-black text-trust-900 shadow-sm">Federación Patronal</div>
               <div class="rounded-md bg-white px-8 py-4 text-center text-sm font-black text-trust-900 shadow-sm">La Caja</div>
-              <div class="rounded-md bg-white px-8 py-4 text-center text-sm font-black text-trust-900 shadow-sm">Meridional</div>
+              <div class="rounded-md bg-white px-8 py-4 text-center text-sm font-black text-trust-900 shadow-sm">Allianz</div>
               <div class="rounded-md bg-white px-8 py-4 text-center text-sm font-black text-trust-900 shadow-sm">Mapfre</div>
+              <div class="rounded-md bg-white px-8 py-4 text-center text-sm font-black text-trust-900 shadow-sm">RSA</div>
               <div class="rounded-md bg-white px-8 py-4 text-center text-sm font-black text-trust-900 shadow-sm">Sancor</div>
               <div class="rounded-md bg-white px-8 py-4 text-center text-sm font-black text-trust-900 shadow-sm">Zurich</div>
+              <div class="rounded-md bg-white px-8 py-4 text-center text-sm font-black text-trust-900 shadow-sm">Meridional</div>
               <div class="rounded-md bg-white px-8 py-4 text-center text-sm font-black text-trust-900 shadow-sm">Federación Patronal</div>
               <div class="rounded-md bg-white px-8 py-4 text-center text-sm font-black text-trust-900 shadow-sm">La Caja</div>
             </div>
@@ -266,28 +326,96 @@
         </div>
       </section>
 
-      <section id="cotizar" class="bg-trust-950 py-16 text-white sm:py-20">
-        <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1fr_0.8fr] lg:px-8">
-          <div>
-            <p class="text-sm font-black uppercase tracking-[0.18em] text-action-400">Cotización express</p>
-            <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-5xl">Ahora sí: dejanos buscar por vos la mejor opción</h2>
-            <p class="mt-5 max-w-2xl text-lg leading-8 text-white/75">Elegí si querés cotizar hogar o caución. Un asesor compara planes, precios y compañías para acercarte una propuesta clara.</p>
+      <section id="beneficios" class="bg-trust-50 py-16 sm:py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl">
+            <p class="text-sm font-black uppercase tracking-[0.18em] text-action-600">Coberturas destacadas</p>
+            <h2 class="mt-3 text-3xl font-black tracking-tight text-trust-950 sm:text-5xl">Por qué elegir nuestro seguro de vivienda</h2>
           </div>
-          <form class="rounded-lg bg-white p-5 text-trust-950 shadow-trust" aria-label="Formulario de cotización">
-            <label class="block text-sm font-bold" for="home-name">Nombre</label>
-            <input id="home-name" class="mt-2 w-full rounded-lg border border-trust-100 px-4 py-3 outline-none ring-action-500/30 transition focus:ring-4" placeholder="Tu nombre" />
-            <label class="mt-4 block text-sm font-bold" for="home-phone">WhatsApp</label>
-            <input id="home-phone" class="mt-2 w-full rounded-lg border border-trust-100 px-4 py-3 outline-none ring-action-500/30 transition focus:ring-4" placeholder="+54 9 ..." />
-            <label class="mt-4 block text-sm font-bold" for="home-type">Quiero cotizar</label>
-            <select id="home-type" class="mt-2 w-full rounded-lg border border-trust-100 px-4 py-3 outline-none ring-action-500/30 transition focus:ring-4">
-              <option>Seguro de hogar</option>
-              <option>Seguro de caución</option>
-              <option>Hogar + caución</option>
-              <option>Asistencia para el hogar</option>
-            </select>
-            <button class="mt-5 w-full rounded-lg bg-action-500 px-5 py-4 text-base font-black text-white shadow-glow transition hover:-translate-y-1 hover:bg-action-600" type="button">
-              Quiero mi cotización
+          <div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            <article class="rounded-lg border border-trust-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-trust">
+              <div class="grid h-12 w-12 place-items-center rounded-lg bg-action-500 text-xl font-black text-white">01</div>
+              <h3 class="mt-6 text-xl font-black">Asistencia las 24hs</h3>
+              <p class="mt-3 leading-7 text-trust-700">Servicio de asistencia domiciliaria para urgencias las 24hs en plomería, cerrajería, destapaciones, electricidad, pérdida de gas y ambulancia.</p>
+            </article>
+            <article class="rounded-lg border border-trust-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-trust">
+              <div class="grid h-12 w-12 place-items-center rounded-lg bg-trust-900 text-xl text-white">02</div>
+              <h3 class="mt-6 text-xl font-black">Daños por problemas de tensión</h3>
+              <p class="mt-3 leading-7 text-trust-700">Cobertura para los aparatos eléctricos que se dañen a consecuencia de una falla en la provisión de energía eléctrica, sin declarar equipo por equipo.</p>
+            </article>
+            <article class="rounded-lg border border-trust-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-trust">
+              <div class="grid h-12 w-12 place-items-center rounded-lg bg-trust-900 text-xl text-white">03</div>
+              <h3 class="mt-6 text-xl font-black">Pérdida de alimentos refrigerados</h3>
+              <p class="mt-3 leading-7 text-trust-700">Si te quedás sin luz por más de 12 horas, cubrimos los alimentos que se hayan echado a perder en la heladera y el freezer.</p>
+            </article>
+            <article class="rounded-lg border border-trust-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-trust">
+              <div class="grid h-12 w-12 place-items-center rounded-lg bg-trust-900 text-xl text-white">04</div>
+              <h3 class="mt-6 text-xl font-black">Inundación</h3>
+              <p class="mt-3 leading-7 text-trust-700">Cobertura para las pérdidas o daños sufridos. Se incorpora a la póliza según la zona y el tipo de vivienda.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="cotizar" class="bg-trust-950 py-16 text-white sm:py-20">
+        <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl">
+            <p class="text-sm font-black uppercase tracking-[0.18em] text-action-400">Cotización personalizada</p>
+            <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-5xl">¿Querés una cotización personalizada?</h2>
+            <p class="mt-5 text-lg leading-8 text-white/75">Contanos cómo es tu vivienda y qué querés cubrir. Con esos datos comparamos compañías y te acercamos una propuesta con coberturas y precio, sin compromiso.</p>
+          </div>
+
+          <form id="quote-form" class="mt-10 rounded-lg bg-white p-6 text-trust-950 shadow-trust sm:p-8" aria-label="Formulario de cotización personalizada">
+            <div class="grid gap-5 sm:grid-cols-2">
+              <div>
+                <label class="block text-sm font-bold" for="q-nombre">Nombre <span class="text-action-600">*</span></label>
+                <input id="q-nombre" name="nombre" autocomplete="given-name" required class="mt-2 w-full rounded-lg border border-trust-100 px-4 py-3 outline-none ring-action-500/30 transition focus:ring-4" placeholder="Tu nombre" />
+              </div>
+              <div>
+                <label class="block text-sm font-bold" for="q-apellido">Apellido <span class="text-action-600">*</span></label>
+                <input id="q-apellido" name="apellido" autocomplete="family-name" required class="mt-2 w-full rounded-lg border border-trust-100 px-4 py-3 outline-none ring-action-500/30 transition focus:ring-4" placeholder="Tu apellido" />
+              </div>
+              <div>
+                <label class="block text-sm font-bold" for="q-dni">DNI <span class="text-action-600">*</span></label>
+                <input id="q-dni" name="dni" inputmode="numeric" required class="mt-2 w-full rounded-lg border border-trust-100 px-4 py-3 outline-none ring-action-500/30 transition focus:ring-4" placeholder="Sin puntos" />
+              </div>
+              <div>
+                <label class="block text-sm font-bold" for="q-m2">Metros cuadrados <span class="text-action-600">*</span></label>
+                <input id="q-m2" name="m2" type="number" min="1" required class="mt-2 w-full rounded-lg border border-trust-100 px-4 py-3 outline-none ring-action-500/30 transition focus:ring-4" placeholder="Ej: 75" />
+              </div>
+              <div class="sm:col-span-2">
+                <label class="block text-sm font-bold" for="q-direccion">Dirección de la vivienda <span class="text-action-600">*</span></label>
+                <input id="q-direccion" name="direccion" autocomplete="street-address" required class="mt-2 w-full rounded-lg border border-trust-100 px-4 py-3 outline-none ring-action-500/30 transition focus:ring-4" placeholder="Calle, número, piso y depto" />
+              </div>
+              <div>
+                <label class="block text-sm font-bold" for="q-zona">Zona o barrio <span class="text-action-600">*</span></label>
+                <input id="q-zona" name="zona" required class="mt-2 w-full rounded-lg border border-trust-100 px-4 py-3 outline-none ring-action-500/30 transition focus:ring-4" placeholder="Ej: Palermo, CABA" />
+              </div>
+              <div>
+                <label class="block text-sm font-bold" for="q-cp">Código postal <span class="text-action-600">*</span></label>
+                <input id="q-cp" name="cp" inputmode="numeric" required class="mt-2 w-full rounded-lg border border-trust-100 px-4 py-3 outline-none ring-action-500/30 transition focus:ring-4" placeholder="Ej: C1425" />
+              </div>
+              <div class="sm:col-span-2">
+                <label class="block text-sm font-bold" for="q-cobertura">Cobertura buscada <span class="text-action-600">*</span></label>
+                <select id="q-cobertura" name="cobertura" required class="mt-2 w-full rounded-lg border border-trust-100 px-4 py-3 outline-none ring-action-500/30 transition focus:ring-4">
+                  <option value="">Elegí una opción</option>
+                  <option>Plan Total Básico</option>
+                  <option>Plan Total Intermedio</option>
+                  <option>Plan Total Full</option>
+                  <option>Solo incendio y responsabilidad civil</option>
+                  <option>Quiero sumar inundación</option>
+                  <option>No sé cuál me conviene, necesito asesoramiento</option>
+                </select>
+              </div>
+            </div>
+
+            <button class="mt-7 flex w-full items-center justify-center gap-2 rounded-lg bg-[#25D366] px-5 py-4 text-base font-black text-white shadow-glow transition hover:-translate-y-1 hover:bg-[#1eb955]" type="submit">
+              <svg aria-hidden="true" class="h-6 w-6" viewBox="0 0 32 32" fill="currentColor">
+                <path d="M16.04 3C8.87 3 3.03 8.82 3.03 15.97c0 2.29.6 4.53 1.75 6.5L3 29l6.7-1.75a13 13 0 0 0 6.34 1.62c7.17 0 13.01-5.82 13.01-12.98C29.05 8.82 23.21 3 16.04 3Zm0 23.68c-1.98 0-3.91-.53-5.6-1.53l-.4-.24-3.97 1.04 1.06-3.86-.26-.4a10.65 10.65 0 0 1-1.64-5.72c0-5.94 4.86-10.77 10.82-10.77 5.96 0 10.82 4.83 10.82 10.77 0 5.94-4.86 10.71-10.83 10.71Zm5.94-8.03c-.33-.16-1.92-.94-2.22-1.05-.3-.11-.52-.16-.74.16-.22.33-.85 1.05-1.04 1.27-.19.22-.38.24-.71.08-.33-.16-1.38-.51-2.63-1.62-.97-.86-1.63-1.92-1.82-2.25-.19-.32-.02-.5.14-.66.15-.15.33-.38.49-.57.16-.19.22-.32.33-.54.11-.22.05-.41-.03-.57-.08-.16-.74-1.78-1.01-2.43-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.57.08-.87.41-.3.32-1.14 1.11-1.14 2.7s1.17 3.14 1.33 3.35c.16.22 2.3 3.5 5.58 4.91.78.33 1.39.53 1.86.68.78.25 1.49.21 2.05.13.63-.09 1.92-.78 2.19-1.54.27-.76.27-1.4.19-1.54-.08-.13-.3-.21-.63-.37Z" />
+              </svg>
+              Cotizar por WhatsApp
             </button>
+            <p class="mt-3 text-center text-xs font-semibold text-trust-700">(*) Campos obligatorios. Se abre WhatsApp con el mensaje ya armado para que lo envíes.</p>
           </form>
         </div>
       </section>
@@ -296,68 +424,74 @@
         <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
           <div>
             <p class="text-sm font-black uppercase tracking-[0.18em] text-action-600">Preguntas frecuentes</p>
-            <h2 class="mt-3 text-3xl font-black tracking-tight text-trust-950 sm:text-5xl">Lo importante antes de contratar</h2>
-            <p class="mt-5 text-lg leading-8 text-trust-700">Respuestas simples para que puedas avanzar con confianza y comparar sin vueltas.</p>
+            <h2 class="mt-3 text-3xl font-black tracking-tight text-trust-950 sm:text-5xl">Lo que más nos preguntan</h2>
+            <p class="mt-5 text-lg leading-8 text-trust-700">Respuestas cortas para que sepas qué estás contratando antes de decidir.</p>
           </div>
           <div class="grid gap-4">
             <details class="rounded-lg border border-trust-100 bg-trust-50 p-5 shadow-sm" open>
+              <summary class="cursor-pointer text-lg font-black text-trust-950">¿Cuáles son las coberturas básicas que debo tener?</summary>
+              <p class="mt-3 leading-7 text-trust-700">Las coberturas de incendio y responsabilidad civil son las básicas de contratación. Sobre esa base se suman robo, daños por agua, cristales y electrodomésticos.</p>
+            </details>
+            <details class="rounded-lg border border-trust-100 bg-white p-5 shadow-sm">
+              <summary class="cursor-pointer text-lg font-black text-trust-950">¿Tengo que declarar mis equipos electrónicos o electrodomésticos?</summary>
+              <p class="mt-3 leading-7 text-trust-700">No. Las coberturas se otorgan sin necesidad de declarar los equipos uno por uno.</p>
+            </details>
+            <details class="rounded-lg border border-trust-100 bg-trust-50 p-5 shadow-sm">
+              <summary class="cursor-pointer text-lg font-black text-trust-950">¿Mis electrodomésticos están cubiertos si hay un problema con la energía eléctrica?</summary>
+              <p class="mt-3 leading-7 text-trust-700">Sí. Todos los electrodomésticos quedan cubiertos en caso de alta o baja de tensión.</p>
+            </details>
+            <details class="rounded-lg border border-trust-100 bg-white p-5 shadow-sm">
+              <summary class="cursor-pointer text-lg font-black text-trust-950">¿Puedo cubrir los alimentos que están en mi heladera?</summary>
+              <p class="mt-3 leading-7 text-trust-700">Sí. Si el corte de energía dura más de 12 horas, los alimentos también están cubiertos.</p>
+            </details>
+            <details class="rounded-lg border border-trust-100 bg-trust-50 p-5 shadow-sm">
+              <summary class="cursor-pointer text-lg font-black text-trust-950">¿Puedo cubrir los daños por acción del agua?</summary>
+              <p class="mt-3 leading-7 text-trust-700">Sí, siempre que la causa provenga del interior de la vivienda, por ejemplo la rotura de una cañería. La inundación se puede incorporar a la póliza aparte.</p>
+            </details>
+            <details class="rounded-lg border border-trust-100 bg-white p-5 shadow-sm">
+              <summary class="cursor-pointer text-lg font-black text-trust-950">¿Tengo cobertura si le ocasiono un daño a un tercero?</summary>
+              <p class="mt-3 leading-7 text-trust-700">Sí. La póliza de hogar te ampara ante situaciones con terceros mediante la cobertura de Responsabilidad Civil.</p>
+            </details>
+            <details class="rounded-lg border border-trust-100 bg-trust-50 p-5 shadow-sm">
+              <summary class="cursor-pointer text-lg font-black text-trust-950">¿Puedo contratar el seguro si estoy alquilando?</summary>
+              <p class="mt-3 leading-7 text-trust-700">Sí. Se puede contratar aunque la vivienda sea alquilada. De hecho, hoy es habitual que lo pidan al momento de firmar el contrato.</p>
+            </details>
+            <details class="rounded-lg border border-trust-100 bg-white p-5 shadow-sm">
+              <summary class="cursor-pointer text-lg font-black text-trust-950">Tuve un siniestro en mi hogar, ¿cómo debo actuar?</summary>
+              <p class="mt-3 leading-7 text-trust-700">Contactanos dentro de las 48hs para tomarte los datos, dar ingreso a la denuncia y resolver lo sucedido de inmediato.</p>
+            </details>
+            <details class="rounded-lg border border-trust-100 bg-trust-50 p-5 shadow-sm">
               <summary class="cursor-pointer text-lg font-black text-trust-950">¿Asegurá La Casa es una compañía de seguros?</summary>
-              <p class="mt-3 leading-7 text-trust-700">No. Es un broker: te ayuda a comparar opciones entre distintas aseguradoras y encontrar una cotización conveniente para tu hogar.</p>
+              <p class="mt-3 leading-7 text-trust-700">No, somos un broker. Comparamos opciones entre distintas aseguradoras y te acercamos la cotización que mejor se adapta a tu hogar.</p>
             </details>
             <details class="rounded-lg border border-trust-100 bg-white p-5 shadow-sm">
               <summary class="cursor-pointer text-lg font-black text-trust-950">¿Los precios de los planes son finales?</summary>
-              <p class="mt-3 leading-7 text-trust-700">Son valores de referencia para iniciar la comparación. El precio final depende del domicilio, tipo de vivienda, coberturas elegidas y compañía seleccionada.</p>
-            </details>
-            <details class="rounded-lg border border-trust-100 bg-trust-50 p-5 shadow-sm">
-              <summary class="cursor-pointer text-lg font-black text-trust-950">¿Con qué compañías trabajan?</summary>
-              <p class="mt-3 leading-7 text-trust-700">Trabajan con varias aseguradoras, incluyendo Meridional, Mapfre y otras opciones del mercado según disponibilidad y perfil de cobertura.</p>
-            </details>
-            <details class="rounded-lg border border-trust-100 bg-white p-5 shadow-sm">
-              <summary class="cursor-pointer text-lg font-black text-trust-950">¿Puedo asegurar también mi PC o tecnología?</summary>
-              <p class="mt-3 leading-7 text-trust-700">Sí. Podés cargar marca, procesador y placa de video para iniciar una cotización específica para tu equipo.</p>
-            </details>
-            <details class="rounded-lg border border-trust-100 bg-trust-50 p-5 shadow-sm">
-              <summary class="cursor-pointer text-lg font-black text-trust-950">¿Qué asistencias del hogar incluyen?</summary>
-              <p class="mt-3 leading-7 text-trust-700">Según el plan, podés acceder a servicios de plomería, gasista, cerrajero y atención de urgencias 24/7.</p>
+              <p class="mt-3 leading-7 text-trust-700">Son valores de referencia. El precio final depende del domicilio, la zona de riesgo, el tipo de vivienda, las coberturas elegidas y la compañía.</p>
             </details>
             <details class="rounded-lg border border-trust-100 bg-trust-50 p-5 shadow-sm">
               <summary class="cursor-pointer text-lg font-black text-trust-950">¿También cotizan seguros de caución?</summary>
-              <p class="mt-3 leading-7 text-trust-700">Sí. Podemos ayudarte con caución para alquiler, garantías contractuales y otras necesidades donde se requiera una garantía emitida por una aseguradora.</p>
-            </details>
-            <details class="rounded-lg border border-trust-100 bg-white p-5 shadow-sm">
-              <summary class="cursor-pointer text-lg font-black text-trust-950">¿Cómo me contactan después de cotizar?</summary>
-              <p class="mt-3 leading-7 text-trust-700">Un asesor puede contactarte por WhatsApp para validar datos, comparar alternativas y cerrar la propuesta más adecuada.</p>
+              <p class="mt-3 leading-7 text-trust-700">Sí. Trabajamos caución para alquiler de vivienda y comercio, garantías contractuales, obras y licitaciones.</p>
             </details>
           </div>
         </div>
       </section>
 
-      <section id="reviews" class="bg-trust-50 py-16 sm:py-20">
+      <section id="opiniones" class="bg-trust-50 py-16 sm:py-20">
         <div class="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
-          <p class="text-sm font-black uppercase tracking-[0.18em] text-action-600">Google Reviews</p>
-          <h2 class="mt-3 text-3xl font-black tracking-tight text-trust-950 sm:text-5xl">Clientes que ya protegen su casa</h2>
-          <p class="mx-auto mt-4 max-w-2xl text-base font-semibold leading-7 text-trust-700">Dato público de referencia: 4.0/5 estrellas y 446 reseñas. Conectá Google Business Profile para cargar testimonios verificados en vivo.</p>
-          <div class="relative mt-10 rounded-lg border border-trust-100 bg-white p-6 shadow-trust sm:p-8">
-            <div class="review-slide is-active">
-              <p class="text-2xl text-action-500" aria-label="4 estrellas">★★★★☆</p>
-              <blockquote class="mx-auto mt-5 max-w-3xl text-xl font-bold leading-9 text-trust-950">"Placeholder de reseña real: reemplazar con texto verificado desde Google Business Profile."</blockquote>
-              <p class="mt-5 font-black text-trust-700">Cliente verificado</p>
-            </div>
-            <div class="review-slide">
-              <p class="text-2xl text-action-500" aria-label="4 estrellas">★★★★☆</p>
-              <blockquote class="mx-auto mt-5 max-w-3xl text-xl font-bold leading-9 text-trust-950">"Placeholder de reseña real: cargar comentario autorizado para sostener confianza y cumplimiento."</blockquote>
-              <p class="mt-5 font-black text-trust-700">Cliente verificado</p>
-            </div>
-            <div class="review-slide">
-              <p class="text-2xl text-action-500" aria-label="4 estrellas">★★★★☆</p>
-              <blockquote class="mx-auto mt-5 max-w-3xl text-xl font-bold leading-9 text-trust-950">"Placeholder de reseña real: sincronizar con la ficha de Google para mostrar contenido actual."</blockquote>
-              <p class="mt-5 font-black text-trust-700">Cliente verificado</p>
-            </div>
-            <div class="mt-8 flex items-center justify-center gap-3">
-              <button class="review-dot h-3 w-9 rounded-full bg-action-500" type="button" aria-label="Ver review 1" data-review="0"></button>
-              <button class="review-dot h-3 w-3 rounded-full bg-trust-200" type="button" aria-label="Ver review 2" data-review="1"></button>
-              <button class="review-dot h-3 w-3 rounded-full bg-trust-200" type="button" aria-label="Ver review 3" data-review="2"></button>
-            </div>
+          <p class="text-sm font-black uppercase tracking-[0.18em] text-action-600">Opiniones en Google</p>
+          <h2 class="mt-3 text-3xl font-black tracking-tight text-trust-950 sm:text-5xl">Lo que dicen quienes ya nos eligieron</h2>
+          <div class="mx-auto mt-10 max-w-2xl rounded-lg border border-trust-100 bg-white p-8 shadow-trust">
+            <p class="text-5xl font-black text-trust-950">4,9</p>
+            <p class="mt-2 text-2xl text-action-500" aria-label="4,9 de 5 estrellas">★★★★★</p>
+            <p class="mt-4 text-base font-semibold leading-7 text-trust-700">435 opiniones en nuestra ficha de Google, sobre nuestra oficina de Juan Francisco Seguí 4646, Palermo.</p>
+            <a
+              href="https://www.google.com/maps/search/?api=1&amp;query=Asegur%C3%A1%20La%20Casa%20Juan%20Francisco%20Segu%C3%AD%204646"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-6 inline-flex rounded-lg bg-trust-900 px-6 py-3 font-black text-white transition hover:-translate-y-1 hover:bg-trust-700"
+            >
+              Leer las opiniones en Google
+            </a>
           </div>
         </div>
       </section>
@@ -366,15 +500,23 @@
     <footer class="bg-trust-950 px-4 py-10 text-white sm:px-6 lg:px-8">
       <div class="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
         <div>
-          <p class="text-lg font-black">Asegurá La Casa</p>
-          <p class="mt-2 text-sm text-white/65">Broker de seguros de hogar. Comparamos compañías para acercarte una mejor cotización.</p>
-          <p class="mt-3 text-sm font-semibold text-white/78">Dirección: Rambla República del Perú 1125, Montevideo</p>
+          <img src="assets/logo.png" alt="Asegurá" class="h-10 w-auto" width="680" height="141" />
+          <p class="mt-4 text-sm text-white/65">Broker de seguros de hogar. Comparamos compañías para acercarte una mejor cotización.</p>
+          <p class="mt-4 text-sm font-semibold text-white/78">Juan Francisco Seguí 4646, 5° piso — CABA</p>
+          <p class="mt-1 text-sm text-white/78">
+            <a class="transition hover:text-action-400" href="tel:+5491151397443">+54-11-5139-7443</a>
+            <span class="text-white/40"> · </span>
+            <a class="transition hover:text-action-400" href="tel:+541147729958">+54-11-4772-9958</a>
+          </p>
+          <p class="mt-1 text-sm text-white/78">
+            <a class="transition hover:text-action-400" href="mailto:contacto@aseguralacasa.com">contacto@aseguralacasa.com</a>
+          </p>
         </div>
         <div class="flex flex-col gap-3 sm:flex-row">
-          <a href="https://www.instagram.com/aseguralacasa/" class="rounded-lg border border-white/20 px-5 py-3 text-center font-black transition hover:-translate-y-1 hover:bg-white hover:text-trust-950">
+          <a href="https://www.instagram.com/AseguraLaCasa/" class="rounded-lg border border-white/20 px-5 py-3 text-center font-black transition hover:-translate-y-1 hover:bg-white hover:text-trust-950">
             Instagram
           </a>
-          <a href="https://www.facebook.com/aseguralacasa/" class="rounded-lg border border-white/20 px-5 py-3 text-center font-black transition hover:-translate-y-1 hover:bg-white hover:text-trust-950">
+          <a href="https://www.facebook.com/AseguraLaCasa" class="rounded-lg border border-white/20 px-5 py-3 text-center font-black transition hover:-translate-y-1 hover:bg-white hover:text-trust-950">
             Facebook
           </a>
           <a href="#cotizar" class="rounded-lg bg-action-500 px-5 py-3 text-center font-black text-white shadow-glow transition hover:-translate-y-1 hover:bg-action-600">
@@ -382,6 +524,7 @@
           </a>
         </div>
       </div>
+      <p class="mx-auto mt-8 max-w-7xl text-xs text-white/50">© 2026 — Todos los derechos reservados a AMK BROKERS SRL.</p>
     </footer>
 
     <a
@@ -395,30 +538,33 @@
     </a>
 
     <script>
-      const slides = document.querySelectorAll(".review-slide");
-      const dots = document.querySelectorAll(".review-dot");
-      let activeReview = 0;
+      const WHATSAPP_ALC = "5491151397443";
+      const quoteForm = document.getElementById("quote-form");
 
-      function setReview(index) {
-        activeReview = index;
-        slides.forEach((slide, slideIndex) => {
-          slide.classList.toggle("is-active", slideIndex === index);
-        });
-        dots.forEach((dot, dotIndex) => {
-          dot.className =
-            dotIndex === index
-              ? "review-dot h-3 w-9 rounded-full bg-action-500"
-              : "review-dot h-3 w-3 rounded-full bg-trust-200";
-        });
-      }
+      quoteForm.addEventListener("submit", (event) => {
+        event.preventDefault();
 
-      dots.forEach((dot) => {
-        dot.addEventListener("click", () => setReview(Number(dot.dataset.review)));
+        const data = new FormData(quoteForm);
+        const campo = (name) => String(data.get(name) || "").trim();
+
+        const mensaje = [
+          "¡Hola! Quiero cotizar un seguro de hogar.",
+          "",
+          `Nombre y apellido: ${campo("nombre")} ${campo("apellido")}`,
+          `DNI: ${campo("dni")}`,
+          `Dirección: ${campo("direccion")}`,
+          `Zona o barrio: ${campo("zona")}`,
+          `Código postal: ${campo("cp")}`,
+          `Metros cuadrados: ${campo("m2")} m2`,
+          `Cobertura buscada: ${campo("cobertura")}`,
+        ].join("\n");
+
+        window.open(
+          `https://wa.me/${WHATSAPP_ALC}?text=${encodeURIComponent(mensaje)}`,
+          "_blank",
+          "noopener",
+        );
       });
-
-      window.setInterval(() => {
-        setReview((activeReview + 1) % slides.length);
-      }, 5200);
     </script>
   </body>
 </html>
